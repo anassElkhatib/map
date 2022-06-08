@@ -9,15 +9,16 @@
 <script>
 function myMap() {
 var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
+  center:new google.maps.LatLng(29.6209469,0.4761317),
   zoom:5,
+  libraries: 'places',
   region: 'MA'
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj6Zqm_dPsV6LWt-q82HNffnWaerctKao&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&region=MA&callback=myMap"></script>
 
 <img src="icons\gear9.png" class="image"></img>
 
@@ -31,6 +32,6 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 .image{
   height: 100px;
   width: 100px;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 </style>
